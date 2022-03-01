@@ -375,10 +375,10 @@ public abstract class GenerateAllSetterBase extends PsiElementBaseIntentionActio
                 {
                     put("boolean", "" +GenerateAllSetterBase.faker.bool().bool() +"" );
                     put("java.lang.Boolean", "" +GenerateAllSetterBase.faker.bool().bool() +"");
-                    put("int", "" +GenerateAllSetterBase.faker.number().numberBetween(1, 1000000) +"");
+                    put("int", "" +GenerateAllSetterBase.faker.number().numberBetween(1, 500) +"");
                     put("byte", "(byte)0");
                     put("java.lang.Byte", "(byte)0");
-                    put("java.lang.Integer", "" +GenerateAllSetterBase.faker.number().numberBetween(1, 1000000) +"");
+                    put("java.lang.Integer", "" +GenerateAllSetterBase.faker.number().numberBetween(1, 500) +"");
                     put("java.lang.String", "\"" + GenerateAllSetterBase.faker.color().name() + "\"");
                     put("java.math.BigDecimal", "new BigDecimal(\""+GenerateAllSetterBase.faker.commerce().price()+"\")");
                     put("java.lang.Long", ""+ GenerateAllSetterBase.faker.number().numberBetween(1, 1000000) +"L");
