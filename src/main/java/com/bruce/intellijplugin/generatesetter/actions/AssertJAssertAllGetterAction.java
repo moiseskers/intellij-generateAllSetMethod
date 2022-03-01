@@ -51,6 +51,9 @@ public class AssertJAssertAllGetterAction extends GenerateAllSetterBase {
 
     @Override
     public boolean isAvailable(@NotNull Project project, Editor editor, @NotNull PsiElement element) {
+
+        System.out.println("here");
+
         PsiFile containingFile = element.getContainingFile();
         if(containingFile==null){
             return false;
